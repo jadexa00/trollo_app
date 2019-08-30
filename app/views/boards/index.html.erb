@@ -1,0 +1,13 @@
+<h1>Your Boards</h1>
+
+<ul class="ui animated list">
+<% @boards.each do |board| %>
+    <div class="item">
+    <li>
+        <div class="header">
+        <%= link_to board.name, board_path(board) %>
+        </div>
+    </li>
+    </div>
+<% end %>
+</ul>
